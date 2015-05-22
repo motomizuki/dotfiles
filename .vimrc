@@ -1,6 +1,6 @@
 "vunlde.vimで管理してるpluginを読み込む
 source ~/dotfiles/.vimrc.bundle
-
+autocmd BufNewFile,BufRead *.ctp set filetype=php
 "基本設定
 source ~/dotfiles/.vimrc.basic
 "StatusLine設定
@@ -27,4 +27,4 @@ source ~/dotfiles/.vimrc.encoding
 source ~/dotfiles/.vimrc.misc
 "プラグインに依存するアレ
 source ~/dotfiles/.vimrc.plugins_setting
-
+set ambiwidth=double

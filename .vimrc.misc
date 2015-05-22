@@ -7,4 +7,7 @@ noremap ; :
 " pluginとかでnmap :call hoge..とかやってるやつがあるので、
 " :でもexコマンドに入れるようにしておく
 " noremap : ;
-
+inoremap <silent> jj <ESC>
+inoremap <silent> <C-j> j
+inoremap <silent> kk <ESC>
+inoremap <silent> <C-k> k

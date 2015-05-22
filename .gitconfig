@@ -1,6 +1,6 @@
 [user]
-  name = Tomohito Ozaki
-  email = ozaki@yuroyoro.com
+	email = shuibenhonggui@gmail.com
+	name = Hiroki Mizumoto
 [color]
   # colorの設定(以下のコマンドは自動で色つける)
   status = auto
@@ -141,3 +141,6 @@
   generic = G move-last-line
   generic = ^F move-page-down
   generic = ^B move-page-up
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f

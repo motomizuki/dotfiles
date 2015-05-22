@@ -384,8 +384,8 @@ esac
 case "${OSTYPE}" in
 # MacOSX
 darwin*)
-    export PATH=$PATH:/opt/local/bin:/opt/local/sbin/
-    export PATH=$PATH:/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/
+    export PATH=$PATH:/opt/local/bin:/opt/local/sbin:$HOME/progl/sh
+    export PATH=$PATH:/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources
     ;;
 freebsd*)
     case ${UID} in
@@ -661,3 +661,16 @@ esac
 ## local固有設定
 #
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+#ruby関係
+PATH=$PATH:/usr/local/Cellar/ruby/1.9.3-p194/bin
+eval "$(rbenv init -)"
+
+#python関係
+eval "$(pyenv init -)"
+#golang
+export GOPATH=$HOME/local/go
+export PATH=$PATH:$GOPATH/bin
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
